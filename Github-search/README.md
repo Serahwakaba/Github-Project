@@ -1,8 +1,9 @@
 # Git Search App
-[Git Search App](https://github.com/linusmbae/Github_Search_App)
+# Author
+Serah Wakaba
 
-## AUthor
-Linus Mutugi Mbae.
+## Description
+A website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories
 
 ## Technologies used
 1 Html
