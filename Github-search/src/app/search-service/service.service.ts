@@ -20,23 +20,23 @@ export class ServiceService {
 
 getUser()
 {
-  // interface ApiResponse
-  // {
-  //   login:string;
-  //   public_repos:string;
-  //   gits:string;
-  //   html_url:string;
-  //   avatar_url:string;
-  //   company:string;
-  //   created_at:any;
-  // }
-  let promise=new Promise((resolve,reject)=>
-{
-  this.http.get<ApiResponse>(this.url + this.login + "?token=" + environment.apiKey).subscribe(data=>{
+  interface ApiResponse
+  {
+    login:string;
+    public_repos:string;
+    gits:string;
+    html_url:string;
+    avatar_url:string;
+    company:string;
+    created_at:any;
+  }
+//   let promise=new Promise((resolve,reject)=>
+// {
+//   this.http.get<ApiResponse>(this.url + this.login + "?token=" + environment.apiKey).subscribe(data=>{
 
-    this.users = new User(data.login,data.avatar_url,data.company,data.created_at,data.public_repos, data.gits, data.html_url)
-    resolve()
-  })
+//     this.users = new User(data.login,data.avatar_url,data.company,data.created_at,data.public_repos, data.gits, data.html_url)
+//     resolve()
+//   })
 })
 return promise
 }
