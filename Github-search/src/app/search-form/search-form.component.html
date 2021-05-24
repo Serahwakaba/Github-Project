@@ -12,13 +12,13 @@
         <form #searchForm='ngForm' class="form-group">
             <input appSelected  class="form-control" type="text" name="login" [(ngModel)]='login' (keyup)='seachUser()' placeholder="Filter By UserName...">
         </form>
-      </div>
+      <!-- </div>
       <br>
         <div class="row">
           <div class="col-sm-3">
             <img *ngIf="service.users.avatar_url" src="{{service.users.avatar_url}}" alt=""><br>
             <span class="btn-default" *ngIf="service.users.login"><strong>{{service.users.login}}</strong> </span>
-          </div>
+          </div> -->
           <div class="col-md-9">
             <p>
             <span class="btn btn-primary" *ngIf="service.users.login">Created on: {{service.users.created_at|date|uppercase}}</span>
