@@ -30,7 +30,7 @@ getUser()
     company:string;
     created_at:any;
   }
-//   let promise=new Promise((resolve,reject)=>
+  let promise=new Promise((resolve,reject)=>
 // {
 //   this.http.get<ApiResponse>(this.url + this.login + "?token=" + environment.apiKey).subscribe(data=>{
 
