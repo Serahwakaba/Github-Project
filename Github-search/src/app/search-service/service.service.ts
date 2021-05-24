@@ -69,8 +69,8 @@ return promise
 
   }
 
-//   updateUser(login:string)
-//   {
-//     this.login=login;
-//   }
-// }
+  updateUser(login:string)
+  {
+    this.login=login;
+  }
+}
