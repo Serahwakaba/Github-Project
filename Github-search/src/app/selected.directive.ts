@@ -1,20 +1,20 @@
-// import { Directive,ElementRef,HostListener } from '@angular/core';
+import { Directive,ElementRef,HostListener } from '@angular/core';
 
-// @Directive({
-//   selector: '[appSelected]'
-// })
-// export class SelectedDirective {
+@Directive({
+  selector: '[appSelected]'
+})
+export class SelectedDirective {
 
-//   constructor(private select:ElementRef) { }
+  constructor(private select:ElementRef) { }
 
-//   @HostListener("click") onClicks()
-//   {
-//    this.textSelect("gold")
-//   }
+  @HostListener("click") onClicks()
+  {
+   this.textSelect("gold")
+  }
 
-//   private textSelect(action:string)
-//   {
-//      this.select.nativeElement.style.backgroundColor=action;
+  private textSelect(action:string)
+  {
+     this.select.nativeElement.style.backgroundColor=action;
 
-//    }
-// }
+   }
+}
