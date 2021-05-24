@@ -15,7 +15,7 @@ export class SearchFormComponent implements OnInit {
     {
       this.service.updateUser(this.login);
       this.service.getRepos()
-      // this.service.getUser()
+      this.service.getUser()
     }
 
     ngOnInit(): void

@@ -8,15 +8,15 @@ import { environment } from "../../environments/environment";
   providedIn: 'root'
 })
 export class ServiceService {
-  users:User;
-  repos:Repos;
-  url="https://api.github.com/users/";
-  private login:string;
-  repo1:any;
-  constructor(private http:HttpClient)
-  {
-    this.login="linusmbae";
-  }
+  // users:User;
+  // repos:Repos;
+  // url="https://api.github.com/users/";
+  // private login:string;
+  // repo1:any;
+  // constructor(private http:HttpClient)
+  // {
+  //   this.login="linusmbae";
+  // }
 
 getUser()
 {
