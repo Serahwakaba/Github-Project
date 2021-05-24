@@ -2,8 +2,7 @@
 [Git Search App](https://github.com/linusmbae/Github_Search_App)
 
 ## AUthor
-Linus Mutugi Mbae.
-
+Serah wakaba
 ## Technologies used
 1 Html
 2 css
