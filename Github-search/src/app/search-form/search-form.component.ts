@@ -13,7 +13,7 @@ export class SearchFormComponent implements OnInit {
     constructor(public service:ServiceService) { }
     seachUser()
     {
-      this.service.updateUser(this.login);
+      // this.service.updateUser(this.login);
       this.service.getRepos()
       this.service.getUser()
     }
