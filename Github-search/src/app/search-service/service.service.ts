@@ -10,26 +10,26 @@ import { environment } from "../../environments/environment";
 export class ServiceService {
   users:User;
   repos:Repos;
-  // url="https://api.github.com/users/";
-  // private login:string;
-  // repo1:any;
-  // constructor(private http:HttpClient)
-  // {
+  url="https://api.github.com/users/";
+  private login:string;
+  repo1:any;
+  constructor(private http:HttpClient)
+  {
     this.login="linusmbae";
   }
 
 getUser()
 {
-  interface ApiResponse
-  {
-    login:string;
-    public_repos:string;
-    gits:string;
-    html_url:string;
-    avatar_url:string;
-    company:string;
-    created_at:any;
-  }
+  // interface ApiResponse
+  // {
+  //   login:string;
+  //   public_repos:string;
+  //   gits:string;
+  //   html_url:string;
+  //   avatar_url:string;
+  //   company:string;
+  //   created_at:any;
+  // }
   let promise=new Promise((resolve,reject)=>
 {
   this.http.get<ApiResponse>(this.url + this.login + "?token=" + environment.apiKey).subscribe(data=>{
